@@ -1,0 +1,135 @@
+@import "variables";
+@font-face {
+  font-family: "Sofia Pro";
+  src: url("../fonts/SofiaProBold.woff2") format("woff2"),
+    url("../fonts/SofiaProBold.woff") format("woff"),
+    url("../fonts/SofiaProBold.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Sofia Pro";
+  src: url("../fonts/SofiaProSemiBold.woff2") format("woff2"),
+    url("../fonts/SofiaProSemiBold.woff") format("woff"),
+    url("../fonts/SofiaProSemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Sofia Pro";
+  src: url("../fonts/SofiaProRegular.woff2") format("woff2"),
+    url("../fonts/SofiaProRegular.woff") format("woff"),
+    url("../fonts/SofiaProRegular.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("../fonts/SourceSerifPro-Regular.woff2") format("woff2"),
+    url("../fonts/SourceSerifPro-Regular.woff") format("woff"),
+    url("../fonts/SourceSerifPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+}
+
+$SofiaPro: "Sofia Pro", Frutiger, "Frutiger Linotype", Univers, Calibri,
+  "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed",
+  "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue",
+  Helvetica, Arial, sans-serif;
+$SourceSerifPro: "Source Serif Pro", Cambria, "Hoefler Text", Utopia,
+  "Liberation Serif", "Nimbus Roman No9 L Regular", Times, "Times New Roman",
+  serif;
+
+h1 {
+  font-family: $SofiaPro;
+  font-weight: 700;
+  font-size: 2.625rem;
+  line-height: 3.5rem;
+}
+
+h2 {
+  font-family: $SofiaPro;
+  font-weight: 600;
+  font-size: 2.25rem;
+  line-height: 2.75rem;
+}
+
+h3 {
+  font-family: $SofiaPro;
+  font-weight: 700;
+  font-size: 1.75rem;
+  line-height: 2.25rem;
+}
+
+h4 {
+  font-family: $SofiaPro;
+  font-weight: 700;
+  font-size: 1.75rem;
+  line-height: 1.25rem;
+  letter-spacing: 0.02em;
+}
+
+h5 {
+  font-family: $SofiaPro;
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  letter-spacing: 0.02em;
+}
+
+.text-body16 {
+  font-family: $SourceSerifPro;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.8em;
+  margin-bottom: 1rem;
+}
+
+.text-body18 {
+  font-family: $SourceSerifPro;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 2rem;
+  margin-bottom: 1rem;
+}
+
+.text-caption14 {
+  font-family: $SofiaPro;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+}
+
+.text-button1 {
+  font-family: $SofiaPro;
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 1em;
+}
+
+.text-button2 {
+  font-family: $SofiaPro;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.text-nav {
+  font-family: $SofiaPro;
+  font-weight: 600;
+  font-size: 3rem;
+  color: $color-white;
+  text-decoration: none;
+  opacity: 0.3;
+  transition: opacity 0.1s ease;
+
+  margin-bottom: 20px;
+
+  &:hover,
+  &:active {
+    opacity: 1;
+  }
+}
