@@ -121,15 +121,4 @@ h5 {
   font-family: $SofiaPro;
   font-weight: 600;
   font-size: 3rem;
-  color: $color-white;
-  text-decoration: none;
-  opacity: 0.3;
-  transition: opacity 0.1s ease;
-
-  margin-bottom: 20px;
-
-  &:hover,
-  &:active {
-    opacity: 1;
-  }
 }
