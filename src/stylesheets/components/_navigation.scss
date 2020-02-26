@@ -1,6 +1,10 @@
-@import "../base/typography";
-@import "../base/variables";
+@import "./button";
+
 .navigation {
+  width: 100vw;
+  background-color: $color-bg;
+  box-sizing: border-box;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -14,7 +18,7 @@
     width: 100vw;
     left: 0;
     top: 0;
-    background-color: #1e1e20;
+    background-color: $color-bg;
     padding-left: 2.5rem;
 
     display: flex;
@@ -31,11 +35,19 @@
       transform: translate3d(0, 0, 0);
       transition: transform 0.2s ease, visibility 0s linear;
     }
+
+    &--initial {
+      transition: none;
+    }
+
+    a:nth-last-child(2) {
+      margin-bottom: 80px;
+    }
   }
 
   &__text {
     @extend .text-nav;
-    color: $color-white;
+    @extend .text-white;
     text-decoration: none;
     opacity: 0.3;
     transition: opacity 0.1s ease;
@@ -43,28 +55,9 @@
     margin-bottom: 20px;
 
     &:hover,
-    &:active {
-      opacity: 1;
-    }
-
+    &:active,
     &--active {
       opacity: 1;
-    }
-  }
-
-  &__project {
-    margin-top: 60px;
-    &__text {
-      @extend .text-button1;
-      color: $color-white;
-      text-decoration: none;
-      margin-right: 20px;
-      transition: margin-right 0.1s ease;
-
-      &:hover,
-      &:focus {
-        margin-right: 24px;
-      }
     }
   }
 }

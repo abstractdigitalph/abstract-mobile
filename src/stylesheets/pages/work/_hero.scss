@@ -1,0 +1,23 @@
+#workHero {
+  min-height: 80vh;
+  background: url("../images/portfolio/hero.svg");
+  background-repeat: no-repeat;
+  background-position: 0% 10%;
+  background-size: 100%;
+
+  .hero {
+    @extend .grid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__h1 {
+      @extend .text-work;
+      @extend .text-white;
+      text-align: center;
+      padding-top: 60%;
+      margin-bottom: 5rem;
+    }
+  }
+}

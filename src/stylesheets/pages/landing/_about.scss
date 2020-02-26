@@ -1,0 +1,31 @@
+#landingAbout {
+  margin: 3.75rem 0 5rem 0;
+
+  .about {
+    &__h3 {
+      background: -webkit-linear-gradient(90deg, #c45af4 0%, #7163de 100%);
+      background: -o-gradient(transparent, transparent);
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: $color-primary;
+      text-shadow: 0 10px 20px rgba(0, 0, 0, 0.35);
+
+      margin-bottom: 2.5rem;
+    }
+
+    &__image {
+      width: 100%;
+      margin-bottom: 2.5rem;
+    }
+
+    &__info {
+      padding: 0 2rem;
+      margin-bottom: 2.5rem;
+    }
+
+    &__h4 {
+      @extend .text-white;
+      margin-bottom: 0;
+    }
+  }
+}

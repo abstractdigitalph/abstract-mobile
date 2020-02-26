@@ -1,0 +1,47 @@
+#footer {
+  @extend .grid;
+  padding: 7.5rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  .footer {
+    &__h5 {
+      @extend .text-white;
+      margin-bottom: 2.5rem;
+    }
+
+    &__logos {
+      display: flex;
+      margin-bottom: 3.75rem;
+    }
+
+    &__imageLink {
+      display: block;
+      height: 1.75rem;
+      width: 1.75rem;
+      text-decoration: none;
+      margin-right: 1.75rem;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    &__image {
+      height: 100%;
+      width: 100%;
+    }
+
+    &__link {
+      @extend .text-label1;
+      @extend .text-white;
+      letter-spacing: 0;
+      text-transform: none;
+      text-decoration: none;
+      margin-bottom: 1.5rem;
+    }
+  }
+}

@@ -1,10 +1,29 @@
-// Load CSS Reset from NPM
+// --Base--
 @import "~normalize.css";
-
-// Base
-@import "base/base";
 @import "base/variables";
+@import "base/base";
 @import "base/typography";
 
+// --Components--
 @import "components/navigation";
 @import "components/hamburger";
+@import "components/button";
+@import "components/callToAction";
+@import "components/nextStop";
+@import "components/footer";
+
+// --Layout--
+@import "layout/grid";
+
+// --Pages--
+
+// Landing
+@import "pages/landing/hero";
+@import "pages/landing/feature";
+@import "pages/landing/portfolio";
+@import "pages/landing/packages";
+@import "pages/landing/about";
+
+// Our Work
+@import "pages/work/hero";
+@import "pages/work/work";

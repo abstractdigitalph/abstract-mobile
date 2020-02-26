@@ -1,0 +1,64 @@
+.portfolio {
+  padding: 7.5rem 0;
+  min-height: calc(100vh - 7.5rem);
+
+  &__label {
+    @extend .text-label1;
+    margin-right: 1.25rem;
+  }
+
+  &__h3 {
+    @extend .text-white;
+    margin: 0.75rem 0 1.25rem 0;
+  }
+
+  .backed {
+    display: flex;
+    align-items: center;
+    &__label {
+      @extend .text-trust;
+      @extend .text-white40;
+      flex-shrink: 0;
+      margin-right: 0.625rem;
+    }
+
+    &__image {
+      height: 2.5rem;
+    }
+  }
+
+  &__p {
+    @extend .text-body18;
+    @extend .text-white75;
+    margin: 1.25rem 0 2.5rem 0;
+  }
+
+  &__image {
+    width: 100%;
+    margin-bottom: 2.5rem;
+  }
+
+  &__buttonHolder {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+#landingSpenmo {
+  .portfolio__label {
+    color: $color-spenmo;
+  }
+}
+
+#landingTightrope {
+  background-color: $color-bgDark;
+  .portfolio__label {
+    color: $color-tightrope;
+  }
+}
+
+#landingDiab {
+  .portfolio__label {
+    color: $color-diab;
+  }
+}

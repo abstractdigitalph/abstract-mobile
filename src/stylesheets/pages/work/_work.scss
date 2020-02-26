@@ -1,0 +1,32 @@
+#workWorks {
+  .work {
+    @extend .grid;
+    height: 28rem;
+    border-radius: 0.75rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-bottom: 2.5rem;
+    text-decoration: none;
+
+    &__h3 {
+      @extend .text-white;
+      padding: 1.75rem;
+    }
+    &__image {
+      width: 100%;
+    }
+  }
+}
+
+#workSpenmo {
+  background-color: $color-spenmoLight;
+}
+
+#workTightrope {
+  background-color: $color-tightropeLight;
+}
+
+#workDiab {
+  background-color: $color-diabLight;
+}

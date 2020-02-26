@@ -1,0 +1,42 @@
+#landingPackages {
+  padding: 3.125rem 0 3.75rem 0;
+
+  .package {
+    width: calc(100% - 1.25rem);
+    margin: 0.75rem 0.625rem;
+    padding: 2.5rem 1.25rem;
+
+    background-color: $color-gray;
+    border-radius: 8px;
+    box-sizing: border-box;
+
+    &__h3 {
+      @extend .text-white;
+      margin: 0.75rem 0 1rem 0;
+    }
+
+    &__buttonHolder {
+      margin-top: 2.5rem;
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    &__agency {
+      margin-top: 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__image {
+      box-sizing: border-box;
+      height: auto;
+      width: 50%;
+      padding: 0 2rem;
+      flex-shrink: 0;
+
+      margin-bottom: 2rem;
+    }
+  }
+}

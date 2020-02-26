@@ -1,0 +1,43 @@
+#landingFeature {
+  padding: 7.5rem 0;
+  background-color: $color-bgDark;
+
+  .feature {
+    &__label {
+      @extend .text-label1;
+      @extend .text-primary;
+      width: 80%;
+      display: block;
+    }
+
+    &__h3 {
+      @extend .text-white;
+      margin-top: 0.75rem;
+      margin-bottom: 1.25rem;
+    }
+  }
+
+  .trust {
+    margin-top: 3.75rem;
+
+    &__text {
+      @extend .text-trust;
+      @extend .text-white40;
+      display: block;
+      padding: 0 2rem;
+      text-align: center;
+      margin-bottom: 2.5rem;
+    }
+
+    &__imageHolder {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    &__image {
+      width: calc(50% - 0.45rem);
+      margin-bottom: 1.75rem;
+    }
+  }
+}

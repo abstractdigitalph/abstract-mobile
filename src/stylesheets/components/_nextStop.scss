@@ -1,0 +1,19 @@
+#nextStop {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  .next {
+    &__button {
+      text-align: center;
+      text-decoration: none;
+    }
+
+    &__h1 {
+      @extend .text-white;
+      margin: 0.75rem 0 0 0;
+    }
+  }
+}

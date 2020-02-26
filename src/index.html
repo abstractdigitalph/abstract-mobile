@@ -6,19 +6,18 @@
     <meta name="description" content="" />
   </head>
   <body>
+    <!-- Navigation -->
     <nav class="navigation" id="nav">
       <img src="images/logo.svg" alt="Abstract Logo" class="navigation__logo" />
-      <div class="navigation__content">
+      <div class="navigation__content  navigation__content--initial">
         <a href="/" class="navigation__text navigation__text--active">Home</a>
-        <a href="/" class="navigation__text">Work</a>
+        <a href="/ourWork.html" class="navigation__text">Work</a>
         <a href="/" class="navigation__text">Process</a>
         <a href="/" class="navigation__text">About</a>
-        <div class="navigation__project">
-          <a href="/" class="navigation__project__text"
-            >Start A Project With Us</a
-          >
-          <img src="images/arrow.svg" alt="Arrow right" />
-        </div>
+        <a href="/" class="button button--white">
+          Start A Project With Us
+          <img src="images/arrow.svg" alt="Arrow right" class="button__image" />
+        </a>
       </div>
       <button
         type="button"
@@ -32,14 +31,339 @@
         </div>
       </button>
     </nav>
+
     <main>
+      <!-- Hero -->
       <section id="landingHero">
-        <h1>
-          We help startups & business ship digital products using design sprints
-        </h1>
-        <button class="text-button1">Watch Showreel</button>
-        <img src="images/arrow.svg" alt="Arrow right" />
+        <div class="grid">
+          <h1 class="hero__h1">
+            We help startups & business ship digital products using design
+            sprints
+          </h1>
+          <a href="/" class="button">
+            Watch Showreel
+            <img
+              src="images/arrow.svg"
+              alt="Arrow right"
+              class="button__image"
+            />
+          </a>
+        </div>
+      </section>
+
+      <!-- Feature -->
+      <section id="landingFeature">
+        <div class="grid">
+          <span class="feature__label">
+            A Digital Product Design Agency like no other
+          </span>
+          <h3 class="feature__h3">
+            Skip the long meetings and email threads. We focus on getting things
+            done.
+          </h3>
+          <p class="text-body16 text-white75">
+            Why spend 4 months to design, prototype and test your idea when all
+            you need is 4 days?
+          </p>
+          <p class="text-body16 text-white75">
+            At Abstract Digital, we focus on delivering value — not the
+            busy-work. We work closely with startups and businesses who wants to
+            ship a web or mobile app idea, using design sprints and innovation
+            workshops.
+          </p>
+          <div class="trust">
+            <span class="trust__text">
+              Trusted by the biggest brands across the world
+            </span>
+            <div class="trust__imageHolder">
+              <img
+                src="images/landing/logos/1.png"
+                alt="500 Startups Logo"
+                class="trust__image"
+                loading="lazy"
+              />
+              <img
+                src="images/landing/logos/2.png"
+                alt="Rocket Internet Logo"
+                class="trust__image"
+                loading="lazy"
+              />
+              <img
+                src="images/landing/logos/3.png"
+                alt="Megaworld Logo"
+                class="trust__image"
+                loading="lazy"
+              />
+              <img
+                src="images/landing/logos/4.png"
+                alt="Presidential Communications Operations Office Logo"
+                class="trust__image"
+                loading="lazy"
+              />
+              <img
+                src="images/landing/logos/5.png"
+                alt="SM Logo"
+                class="trust__image"
+                loading="lazy"
+              />
+              <img
+                src="images/landing/logos/6.png"
+                alt="M Lhuillier Logo"
+                class="trust__image"
+                loading="lazy"
+              />
+              <img
+                src="images/landing/logos/7.png"
+                alt="Cebu Holdings Logo"
+                class="trust__image"
+                loading="lazy"
+              />
+              <img
+                src="images/landing/logos/8.png"
+                alt="Coins.ph Logo"
+                class="trust__image"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Portfolio-->
+      <!--Spenmo-->
+      <section id="landingSpenmo" class="portfolio">
+        <div class="grid">
+          <span class="portfolio__label">Spenmo</span>
+          <span class="text-label1 text-white40">Fintech</span>
+          <h3 class="portfolio__h3">Reinventing Expense Management in SEA</h3>
+
+          <div class="backed">
+            <span class="backed__label">Backed by</span>
+            <img
+              src="images/landing/logos/2.png"
+              alt="Rocket Intenet"
+              class="backed__image"
+              loading="lazy"
+            />
+          </div>
+
+          <p class="portfolio__p">
+            See how we’ve helped Mo and his team rapidly build an MVP for their
+            fintech startup – using the design sprint.
+          </p>
+          <img
+            src="images/landing/portfolio/spenmo.png"
+            alt="Spenmo app on smartphone"
+            class="portfolio__image"
+            loading="lazy"
+          />
+          <div class="portfolio__buttonHolder">
+            <a href="/" class="button button--white40">
+              Check it out
+              <img
+                src="images/arrowGray.svg"
+                alt="Arrow right"
+                class="button__image button__image--small"
+              />
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!--Tightrope-->
+      <section id="landingTightrope" class="portfolio">
+        <div class="grid">
+          <span class="portfolio__label">Tightrope Coffee</span>
+          <span class="text-label1 text-white40">Food & Beverage</span>
+          <h3 class="portfolio__h3">
+            Automating The Coffee Ordering Experience
+          </h3>
+          <p class="portfolio__p">
+            Learn how we’ve helped Gabe’s team of baristas and cooks, build a
+            pre-ordering platform that integrates seamlessly into their daily
+            coffeeshop operations.
+          </p>
+          <img
+            src="images/landing/portfolio/tightrope.png"
+            alt="Tightrope platform on tablet"
+            class="portfolio__image"
+            loading="lazy"
+          />
+          <div class="portfolio__buttonHolder">
+            <a href="/" class="button button--white40">
+              Check it out
+              <img
+                src="images/arrowGray.svg"
+                alt="Arrow right"
+                class="button__image button__image--small"
+              />
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!--Diet in a Box-->
+      <section id="landingDiab" class="portfolio">
+        <div class="grid">
+          <span class="portfolio__label">Diet in a Box</span>
+          <span class="text-label1 text-white40">Health</span>
+          <h3 class="portfolio__h3">
+            Redesigning How People Perceive Healthy Meals
+          </h3>
+          <p class="portfolio__p">
+            Discover how we’ve digitally transformed their landing page and food
+            ordering process which as a result – doubled their monthly orders.
+          </p>
+          <img
+            src="images/landing/portfolio/diab.png"
+            alt="Diet in a box website on laptop"
+            class="portfolio__image"
+            loading="lazy"
+          />
+          <div class="portfolio__buttonHolder">
+            <a href="/" class="button button--white40">
+              Check it out
+              <img
+                src="images/arrowGray.svg"
+                alt="Arrow right"
+                class="button__image button__image--small"
+              />
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!--Packages-->
+      <section id="landingPackages">
+        <div class="package">
+          <span class="text-label1 text-primary">
+            For Startups & Businesses
+          </span>
+          <h3 class="package__h3">Get-To-Market Quick Package</h3>
+          <p class="text-body16 text-white75">
+            Freelancers are risky. Full-service agencies are expensive and slow.
+            That’s where we get into the picture.
+          </p>
+          <p class="text-body16 text-white75">
+            Let’s ship together a prototype of your next startup idea in 2
+            weeks.
+          </p>
+          <div class="package__buttonHolder">
+            <a href="/" class="button button--white40">
+              Let's Explore
+              <img
+                src="images/arrowGray.svg"
+                alt="Arrow right"
+                class="button__image button__image--small"
+              />
+            </a>
+          </div>
+        </div>
+
+        <div class="package">
+          <span class="text-label1 text-secondary">
+            For Tech Teams & Agencies
+          </span>
+          <h3 class="package__h3">Developer Agency Partnerships</h3>
+          <p class="text-body16 text-white75">
+            We’re building a network of software development agencies who wants
+            us take on digital design work together with them.
+          </p>
+          <div class="package__agency">
+            <img
+              src="images/landing/agency/1.png"
+              alt="Idea Robin"
+              loading="lazy"
+              class="package__image"
+            />
+            <img
+              src="images/landing/agency/2.png"
+              alt="Nerubia"
+              loading="lazy"
+              class="package__image"
+            />
+            <img
+              src="images/landing/agency/3.png"
+              alt="Orchid"
+              loading="lazy"
+              class="package__image"
+            />
+          </div>
+          <div class="package__buttonHolder">
+            <a href="/" class="button button--white40">
+              Let's Explore
+              <img
+                src="images/arrowGray.svg"
+                alt="Arrow right"
+                class="button__image button__image--small"
+              />
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!--About Us-->
+      <section id="landingAbout">
+        <div class="grid">
+          <h3 class="about__h3">
+            We’re a fun team of strategists, designers and developers
+          </h3>
+          <img
+            src="images/landing/about.png"
+            alt="Team Abstract"
+            loading="lazy"
+            class="about__image"
+          />
+
+          <div class="about__info">
+            <h4 class="about__h4">
+              hello@abstract.ph
+            </h4>
+            <span class="text-caption14 text-white50">
+              We love our inbox – drop us an email.
+            </span>
+          </div>
+
+          <div class="about__info">
+            <h4 class="about__h4">
+              +63 998 544 4728
+            </h4>
+            <span class="text-caption14 text-white50">
+              Hello Garci. How are you?
+            </span>
+          </div>
+
+          <div class="about__info">
+            <h4 class="about__h4">
+              @madebyabstract
+            </h4>
+            <span class="text-caption14 text-white50">
+              Stalking us? Use this handle to find us on the interwebs.
+            </span>
+          </div>
+        </div>
       </section>
     </main>
+
+    <footer>
+      <!--Call To Action-->
+      <section id="callToAction">
+        <h1 class="text-white">
+          Let’s ideate, validate, and ship fast
+        </h1>
+        <a href="/" class="cta__button">
+          <h4 class="cta__h4">Book a free Consultation</h4>
+        </a>
+        <span class="text-project text-primary">*Project starts at $4k</span>
+      </section>
+
+      <!--Next Stop-->
+      <section id="nextStop">
+        <a href="/ourWork.html" class="next__button">
+          <span class="text-label1 text-primary">Next Stop</span>
+          <h1 class="next__h1">Our Work</h1>
+        </a>
+      </section>
+    </footer>
   </body>
 </html>
