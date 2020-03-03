@@ -1,0 +1,38 @@
+.glide {
+  width: calc(100% + 20px);
+  &__slide {
+    padding-right: 3.4375rem;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    &--small {
+      padding-right: 1.25rem;
+      padding-top: 1.25rem;
+    }
+  }
+
+  &__step {
+    @extend .text-step;
+    @extend .text-white;
+    background: #7563df;
+    border-radius: 8px;
+    padding: 8px 12px;
+    transform: translateY(50%);
+  }
+
+  &__blurb {
+    @extend .text-slider;
+    @extend .text-white;
+    margin-top: 1.25rem;
+    width: 80%;
+  }
+
+  &__image {
+    width: 100%;
+  }
+}

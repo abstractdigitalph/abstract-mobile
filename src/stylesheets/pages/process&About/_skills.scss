@@ -1,0 +1,27 @@
+#aboutSkills {
+  padding: 5rem 3.75rem;
+  background: $color-bgDark;
+  .skill {
+    &__label {
+      @extend .text-skillLabel;
+      @extend .text-white20;
+      margin-bottom: 0.75rem;
+    }
+
+    &__ul {
+      list-style-type: none;
+      padding-left: 0;
+      margin-bottom: 2.5rem;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    &__li {
+      @extend .text-skill;
+      @extend .text-white;
+      list-style: none;
+    }
+  }
+}

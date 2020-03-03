@@ -1,3 +1,5 @@
+import Glide from '@glidejs/glide';
+
 // Navigation Toggle
 const navHamburger = document.getElementsByClassName('hamburger');
 const navContent = document.getElementsByClassName('navigation__content');
@@ -10,3 +12,14 @@ navHamburger[0].addEventListener('click', () => {
   navContent[0].classList.toggle('navigation__content--active');
   navContent[0].classList.remove('navigation__content--initial');
 });
+
+const sprintElement = document.getElementById('processSprint');
+const aboutElement = document.getElementById('aboutTeam');
+if (sprintElement || aboutElement) {
+  window.addEventListener('DOMContentLoaded', () => {
+    new Glide('.glide', {
+      gap: 0,
+      peek: { before: 0, after: 32 },
+    }).mount();
+  });
+}

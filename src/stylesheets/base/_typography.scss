@@ -152,6 +152,53 @@ h5 {
   line-height: 1.7em;
 }
 
+.text-slider {
+  font-family: $SofiaPro;
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 1.5em;
+  letter-spacing: -0.02em;
+}
+
+.text-step {
+  font-family: $SofiaPro;
+  font-weight: 700;
+  font-size: 0.8125rem;
+  line-height: 1em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.text-skillLabel {
+  font-family: $SofiaPro;
+  font-weight: 600;
+  font-size: 0.8125rem;
+  line-height: 1em;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.text-skill {
+  font-family: $SofiaPro;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 2rem;
+}
+
+.text-name {
+  font-family: $SofiaPro;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.25rem;
+}
+
+.text-profession {
+  font-family: $SofiaPro;
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+}
+
 .text-primary {
   color: $color-primary;
 }
@@ -174,4 +221,21 @@ h5 {
 
 .text-white40 {
   color: $color-white40;
+}
+
+.text-white30 {
+  color: $color-white30;
+}
+
+.text-white20 {
+  color: $color-white20;
+}
+
+.text-gradient {
+  /* stylelint-disable-next-line */
+  background: -webkit-linear-gradient(0deg, #c45af4 0%, #7163de 100%);
+  background: -o-gradient(transparent, transparent);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: $color-primary;
 }

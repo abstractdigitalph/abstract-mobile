@@ -1,0 +1,28 @@
+#aboutCrew {
+  @extend .grid;
+  margin: 5rem 20px;
+  .crew {
+    &__h3 {
+      @extend .text-white;
+      margin: 0.75rem 0 2.5rem;
+    }
+
+    &__holder {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 1.5rem 1.25rem;
+    }
+
+    &__crew {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__image {
+      width: 100%;
+      margin-bottom: 1.25rem;
+    }
+  }
+}

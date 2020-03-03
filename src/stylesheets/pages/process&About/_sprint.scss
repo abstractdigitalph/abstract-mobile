@@ -1,0 +1,18 @@
+#processSprint,
+#aboutTeam {
+  margin: 3.75rem 20px 5rem;
+  @extend .grid;
+
+  .sprint {
+    &__h3 {
+      @extend .text-white;
+      margin: 0.75rem 0 1.25rem;
+    }
+
+    &__body {
+      @extend .text-body16;
+      @extend .text-white75;
+      margin-bottom: 1.25rem;
+    }
+  }
+}

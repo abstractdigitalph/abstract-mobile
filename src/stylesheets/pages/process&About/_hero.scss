@@ -1,0 +1,34 @@
+#processHero,
+#aboutHero {
+  height: 50vh;
+  background-repeat: no-repeat;
+  background-position: 0% 10%;
+  background-size: 100%;
+
+  .hero {
+    @extend .grid;
+    height: 100%;
+    box-sizing: border-box;
+
+    padding-bottom: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__h1 {
+      @extend .text-gradient;
+      text-align: center;
+      text-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      margin-bottom: 4rem;
+    }
+  }
+}
+
+#processHero {
+  background-image: url("../images/process/hero.svg");
+}
+
+#aboutHero {
+  background-image: url("../images/about/hero.svg");
+}
