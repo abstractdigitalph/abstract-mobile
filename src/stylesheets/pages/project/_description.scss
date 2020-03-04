@@ -75,6 +75,10 @@
 
       padding-top: 1.25rem;
       margin-bottom: 5rem;
+
+      &--small {
+        margin-bottom: 1.25rem;
+      }
     }
 
     &__logo {
@@ -89,6 +93,10 @@
 
       &--large {
         margin-bottom: 5rem;
+      }
+
+      &--small {
+        margin-bottom: 2.5rem;
       }
 
       &--left {
