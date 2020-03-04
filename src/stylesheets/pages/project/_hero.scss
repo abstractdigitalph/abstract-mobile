@@ -1,0 +1,43 @@
+#projectHero {
+  .hero {
+    background: var(--brand-image),
+      linear-gradient(var(--brand-color), var(--brand-color));
+
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: 100%;
+    height: calc(100vh - 90px);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__h1 {
+      @extend .text-white;
+      margin: 0;
+    }
+
+    &__image {
+      margin-top: 2.1875rem;
+      width: 100%;
+      position: relative;
+      z-index: 1;
+    }
+
+    &__line {
+      display: block;
+      position: absolute;
+      bottom: 0;
+      margin: 0;
+
+      width: 2px;
+      height: 50%;
+      border: none;
+      color: $color-white;
+      background-color: currentColor;
+
+      z-index: 0;
+    }
+  }
+}

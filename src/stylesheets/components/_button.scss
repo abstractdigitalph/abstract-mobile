@@ -24,4 +24,8 @@
       margin-left: 0.75rem;
     }
   }
+
+  &--small {
+    @extend .text-button2;
+  }
 }

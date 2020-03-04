@@ -3,6 +3,7 @@
 .navigation {
   width: 100vw;
   background-color: $color-bg;
+  background-color: var(--brand-color);
   box-sizing: border-box;
 
   display: flex;

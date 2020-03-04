@@ -1,0 +1,16 @@
+#projectBlurb {
+  border-top: solid 1px #2e2e30;
+  border-bottom: solid 1px #2e2e30;
+  padding: 3.75rem 2rem 3.75rem;
+  text-align: center;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    background-image: url("../images/projects/quote.svg");
+    width: 66px;
+    height: 44px;
+  }
+}

@@ -1,0 +1,18 @@
+#upNext {
+  height: 12.5rem;
+  background: var(--brand-next);
+  background-position: right center;
+  background-size: 12.5rem 12.5rem;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  margin-bottom: 3.75rem;
+
+  .nextProj {
+    @extend .grid;
+    &__h1 {
+      @extend .text-white;
+      margin: 0.8125rem 0 1.125rem;
+    }
+  }
+}
