@@ -11,6 +11,7 @@ navHamburger[0].addEventListener('click', () => {
   );
   navContent[0].classList.toggle('navigation__content--active');
   navContent[0].classList.remove('navigation__content--initial');
+  document.body.classList.toggle('disable-scroll');
 });
 
 const sprintElement = document.getElementById('processSprint');
