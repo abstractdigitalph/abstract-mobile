@@ -38,6 +38,7 @@
     &__image {
       width: calc(50% - 0.45rem);
       margin-bottom: 1.75rem;
+      filter: grayscale(1) contrast(1.5);
     }
   }
 }
