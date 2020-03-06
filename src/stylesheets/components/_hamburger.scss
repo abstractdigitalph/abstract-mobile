@@ -14,15 +14,13 @@
   height: 50px;
   width: 50px;
   z-index: 3;
-
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 1rem 0.75rem;
-
   transition: 0.2s box-shadow ease, 0.1s border ease;
 
-  &:focus{
+  &:focus {
     outline: none;
   }
 

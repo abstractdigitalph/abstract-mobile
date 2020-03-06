@@ -33,12 +33,21 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
+      @include breakpoint(sm) {
+        justify-content: space-around;
+      }
     }
 
     &__image {
       width: calc(50% - 0.45rem);
       margin-bottom: 1.75rem;
+      padding: 5px;
+      box-sizing: border-box;
       filter: grayscale(1) contrast(1.5);
+      @include breakpoint(sm) {
+        width: calc(40% - 1rem);
+        padding: 5px 10px;
+      }
     }
   }
 }

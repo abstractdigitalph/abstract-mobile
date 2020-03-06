@@ -2,6 +2,8 @@
   @extend .text-button1;
   @extend .text-primary;
   text-decoration: none;
+  // text-underline-position: under;
+  // text-decoration: $color-secondary underline wavy;
 
   &--white {
     @extend .text-white;
