@@ -1,0 +1,56 @@
+.overlay {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  background-image: url(../images/overlay/bg.png);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  background-color: #1e1e20;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  @include breakpoint(md) {
+    display: flex;
+  }
+  .container {
+    max-width: 420px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    > .title {
+      @extend .text-label1;
+      @extend .text-white;
+      margin-bottom: 10px;
+    }
+
+    > .heading {
+      @extend .text-gradient;
+      text-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+    > .content {
+      @extend .text-body16;
+      @extend .text-white;
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+    > .cta {
+      background: linear-gradient(90deg, #c45af4 0%, #7163de 100%);
+      padding: 0.75rem 1.25rem;
+      border-radius: 0.5rem;
+      text-decoration: none;
+      margin-bottom: 2.5rem;
+      color: white;
+      h4 {
+        margin: 0;
+        color: white;
+      }
+    }
+  }
+}

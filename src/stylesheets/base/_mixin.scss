@@ -1,5 +1,6 @@
 // Responsive Breakpoint Mixin
 @mixin breakpoint($class) {
+  /* stylelint-disable block-closing-brace-newline-after */
   @if $class == xs {
     @media (max-width: 480px) {
       @content;
