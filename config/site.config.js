@@ -9,14 +9,14 @@ if (!ROOT) {
 
 const config = {
   // Your website's name, used for favicon meta tags
-  site_name: 'Abstract.ph',
+  site_name: 'Abstract',
 
   // Your website's description, used for favicon meta tags
   site_description:
     'Abstract is an agency specializing in UI, UX and digital product design.',
 
   // Your website's URL, used for sitemap
-  site_url: 'https://abstract.ph',
+  site_url: 'https://m.abstract.ph',
 
   // Google Analytics tracking ID (leave blank to disable)
   googleAnalyticsUA: '',
