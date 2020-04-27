@@ -13,9 +13,10 @@
   text-align: center;
   align-items: center;
   justify-content: center;
-  @include breakpoint(md) {
+  @include breakpoint(lg) {
     display: flex;
   }
+
   .container {
     max-width: 420px;
     display: flex;

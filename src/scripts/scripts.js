@@ -30,22 +30,13 @@ if (sprintElement || aboutElement) {
   });
 }
 
-// Detect viewport for overlay
-
-function reportWindowSize() {
-  if (window.innerWidth > 768) {
-    document.body.style.overflowY = 'hidden';
+const hideScroll = () => {
+  if (window.innerWidth > 992) {
+    document.body.classList.add('disable-scroll');
   } else {
-    document.body.style.overflowY = 'auto';
+    document.body.classList.remove('disable-scroll');
   }
-}
+};
 
-window.onresize = reportWindowSize;
-
-document.addEventListener('DOMContentLoaded', () => {
-  if (window.innerWidth > 768) {
-    document.body.style.overflowY = 'hidden';
-  } else {
-    document.body.style.overflowY = 'auto';
-  }
-});
+document.addEventListener('resize', hideScroll);
+document.addEventListener('DOMContentLoaded', hideScroll);

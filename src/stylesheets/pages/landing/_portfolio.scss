@@ -36,11 +36,25 @@
   &__image {
     width: 100%;
     margin-bottom: 2.5rem;
+    @include breakpoint(sm) {
+      width: 50%;
+      align-self: center;
+    }
   }
 
   &__buttonHolder {
     display: flex;
     justify-content: center;
+    align-self: center;
+  }
+
+  &__grid {
+    @extend .grid;
+    @include breakpoint(sm) {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
   }
 }
 

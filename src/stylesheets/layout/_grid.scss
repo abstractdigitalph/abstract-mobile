@@ -1,11 +1,12 @@
 .grid {
-  margin-left: 20px;
-  margin-right: 20px;
+  margin: 0 auto;
   width: calc(100vw - 40px);
   @include breakpoint(sm) {
     max-width: 576px;
-    display: flex;
-    flex-direction: column;
-    margin: auto;
+    margin: 0 auto;
+  }
+  @include breakpoint(md) {
+    max-width: 768px;
+    margin: 0 auto;
   }
 }
