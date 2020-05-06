@@ -1,6 +1,6 @@
 .projectDescription {
   @extend .grid;
-  margin: 6.25rem 20px 5rem;
+  margin: 6.25rem auto 5rem;
   .desc {
     &__h3 {
       @extend .text-white;
