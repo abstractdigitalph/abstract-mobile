@@ -13,4 +13,11 @@
     width: 66px;
     height: 44px;
   }
+
+  &--noQuote {
+    @extend #projectBlurb;
+    &::before {
+      display: none;
+    }
+  }
 }
