@@ -1,29 +1,48 @@
 #workWorks {
   .work {
     @extend .grid;
-    height: 28rem;
+    height: 32rem;
     border-radius: 0.75rem;
     display: flex;
-    justify-content: space-between;
-    flex-direction: column;
     margin-bottom: 2.5rem;
     text-decoration: none;
     overflow: hidden;
+    position: relative;
 
     &__h3 {
       @extend .text-white;
       padding: 1.75rem;
+      margin: 0;
+
+      &--bottom {
+        @extend .work__h3;
+        align-self: flex-end;
+      }
     }
     &__imageHolder {
-      max-height: 70%;
+      position: absolute;
+      top: 0;
+      width: 100%;
       display: flex;
       align-items: flex-end;
       justify-content: flex-end;
+
+      &--bottom {
+        @extend .work__imageHolder;
+        bottom: 0;
+      }
     }
     &__image {
-      height: 100%;
+      width: 100%;
+      @include breakpoint("sm") {
+        width: 70%;
+      }
     }
   }
+}
+
+#workFlash {
+  background-color: $color-flash;
 }
 
 #workSpenmo {
