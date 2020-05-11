@@ -119,8 +119,8 @@ const videos = {
     {
       loader: 'file-loader',
       query: {
-        name: '[name].[hash].[ext]',
-        outputPath: 'images/',
+        name: '[name].[ext]',
+        outputPath: 'videos/',
       },
     },
   ],

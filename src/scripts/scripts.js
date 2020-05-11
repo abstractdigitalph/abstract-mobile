@@ -1,4 +1,5 @@
 import Glide from '@glidejs/glide';
+import '../videos/spenmo.webm';
 
 // Navigation Toggle
 const navHamburger = document.getElementsByClassName('hamburger');
