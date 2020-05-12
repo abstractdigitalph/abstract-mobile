@@ -50,6 +50,8 @@
 
   &__grid {
     @extend .grid;
+    display: block;
+    text-decoration: none;
     @include breakpoint(sm) {
       display: flex;
       flex-direction: column;

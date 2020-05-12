@@ -10,6 +10,8 @@
 
   .nextProj {
     @extend .grid;
+    display: block;
+    text-decoration: none;
     &__h1 {
       @extend .text-white;
       margin: 0.8125rem 0 1.125rem;
