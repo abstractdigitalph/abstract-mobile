@@ -114,12 +114,12 @@ const fonts = {
 
 // Video loaders
 const videos = {
-  test: /\.(mp4|webm)$/,
+  test: /\.(mp4|webm|m4v)$/,
   use: [
     {
       loader: 'file-loader',
       query: {
-        name: '[name].[ext]',
+        name: '[name].[hash].[ext]',
         outputPath: 'videos/',
       },
     },
