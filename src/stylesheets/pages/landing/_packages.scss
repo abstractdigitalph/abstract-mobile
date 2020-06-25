@@ -28,8 +28,13 @@
       margin-top: 2rem;
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-between;
+      justify-content: space-around;
       align-items: center;
+      > .packages__agency {
+        max-width: 100%;
+        height: auto;
+        width: calc(50% - 20px);
+      }
     }
 
     &__image {
