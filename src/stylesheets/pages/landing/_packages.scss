@@ -19,21 +19,23 @@
     }
 
     &__buttonHolder {
-      margin-top: 2.5rem;
+      margin-top: 1rem;
       display: flex;
       justify-content: flex-end;
     }
 
     &__agency {
-      margin-top: 2rem;
+      margin: 2rem 0 2.5rem;
       display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
+      justify-items: space-between;
       align-items: center;
+
       > .packages__agency {
-        max-width: 100%;
+        width: calc(50% - 0.8125rem);
         height: auto;
-        width: calc(50% - 20px);
+
+        object-fit: scale-down;
+        object-position: center;
       }
     }
 
@@ -45,6 +47,11 @@
       flex-shrink: 0;
 
       margin-bottom: 2rem;
+    }
+
+    &__price {
+      margin-top: 2.5rem;
+      text-align: right;
     }
   }
 }
